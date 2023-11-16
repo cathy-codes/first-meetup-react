@@ -12,7 +12,11 @@ export default function AlbumListing(props) {
         <section className="mb-12">
             <h2 className="text-3xl text-green-400 mb-4">{heading}</h2>
             <div className="grid grid-cols-5 gap-4">
-                <AlbumListingItem />
+                {
+                    listing.map((album, index) => {
+                        return <AlbumListingItem album={album} />
+                    })
+                }
             </div>
         </section>
     )

@@ -16,7 +16,7 @@ export default function AlbumListingItem({album}) {
             </div>
 
             <div className="text-left">
-                <h3 className="text-md font-bold mb-1 text-white">{album.name}</h3>
+                <h3 className="text-md font-bold mb-1 text-white">{album.title}</h3>
                 <p className="text-sm mb-2 text-gray-400">By Singer</p>
                 <p className="text-sm mb-2 text-green-200">$9.99</p>
 

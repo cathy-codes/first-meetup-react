@@ -13,7 +13,7 @@ export default function AlbumListing(props) {
             <h2 className="text-3xl text-green-400 mb-4">{heading}</h2>
             <div className="grid grid-cols-5 gap-4">
                 {
-                    listing.map((album, index) => {
+                    listing.slice(0, 10).map((album, index) => {
                         return <AlbumListingItem album={album} />
                     })
                 }
